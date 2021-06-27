@@ -1,0 +1,110 @@
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f0f0, 0 0 40px #cac1c6, 0 0 50px #f0f0f0, 0 0 60px #e0dddf, 0 0 70px #ffffff;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #dfdfdf, 0 0 40px #f1e8ed, 0 0 50px #ece5e9, 0 0 60px #ffffff, 0 0 70px #e4d7dd, 0 0 80px #c5b5bd;
+    }
+}
+
+@-webkit-keyframes boxglow {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f0f0, 0 0 40px #cac1c6, 0 0 50px #f0f0f0, 0 0 60px #e0dddf, 0 0 70px #ffffff;
+    }
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #dfdfdf, 0 0 40px #f1e8ed, 0 0 50px #ece5e9, 0 0 60px #ffffff, 0 0 70px #e4d7dd, 0 0 80px #c5b5bd;
+    }
+}
+
+
+
+
+body {
+    background-color: black;
+}
+
+.topnav {
+    background-color: black; /*#345A50*/   /*first: 344250*/
+    overflow: hidden;
+}
+
+.topnav a {
+    float: right;
+    color: #a59e9e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: solid;
+    transition-duration: 550ms;
+
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.topnav a:hover {
+    background-color: white; /*#67829c*/
+    text-decoration-color: #292c2e;
+    color: black;
+
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+
+    -webkit-animation: boxglow 1s ease-in-out infinite alternate;
+    -moz-animation: boxglow 1s ease-in-out infinite alternate;
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+.basetext {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+} 
+
+.buttondec {
+    text-decoration-color: black;
+    font-size: 20px;
+  
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
+  
+    -webkit-animation: boxglow 1s ease-in-out infinite alternate;
+    -moz-animation: boxglow 1s ease-in-out infinite alternate;
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+.buttondecb {
+    text-decoration-color: black;
+    font-size: 20px;
+  
+    
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
+  
+    -webkit-animation: boxglow 1s ease-in-out infinite alternate;
+    -moz-animation: boxglow 1s ease-in-out infinite alternate;
+    animation: boxglow 1s ease-in-out infinite alternate;
+}
+
+
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
